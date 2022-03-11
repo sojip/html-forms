@@ -1,0 +1,148 @@
+@font-face {
+  font-family: norse;
+  src: url("/fonts/Norse-Bold.otf");
+}
+
+:root {
+  ---green: #596d48;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  height: 100%;
+}
+
+.container {
+  width: 70%;
+  height: 100%;
+  margin: auto;
+}
+
+.logosection {
+  width: 40%;
+  height: 100%;
+  background-image: url("img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.formsection {
+  float: right;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.formsection > div > * {
+  padding: 0 25px;
+}
+
+.formsection form {
+  margin: 50px 0 30px 0;
+  background-color: white;
+  border: solid 1px white;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.formsection p:first-of-type,
+.formsection p:nth-child(2) {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.logosection .overlayWrapper {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: relative;
+  top: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.logosection img {
+  width: 60px;
+}
+
+.logosection div:last-child {
+  color: white;
+  font-family: norse;
+  font-size: 3rem;
+}
+
+.inputsWrapper {
+  margin-bottom: 20px;
+}
+
+.inputsWrapper > div {
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+input:not(input[type="submit"]) {
+  border: solid 1px #e5e7eb;
+}
+
+input:not(input[type="submit"]):focus {
+  outline: none;
+  border: solid 1px blue;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.inputsWrapper label {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  font-weight: bold;
+}
+
+.inputsWrapper > div:nth-child(even) {
+  float: right;
+}
+
+input[type="submit"] {
+  margin-left: 25px;
+  background-color: var(---green);
+  color: white;
+  font-weight: bold;
+  font-family: sans-serif;
+  cursor: pointer;
+  padding: 10px 25px;
+}
+
+.formsection a {
+  border: none;
+  text-decoration: none;
+  color: var(---green);
+  font-weight: bold;
+}
+
+.formsection a:hover {
+  color: black;
+}
+
+.logosection > p {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: white;
+  bottom: 0;
+}
+
+.logosection a {
+  text-decoration: none;
+  color: white;
+}
