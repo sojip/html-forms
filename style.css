@@ -25,12 +25,15 @@ body {
 }
 
 .container {
+  border-radius: 10px;
   width: 70%;
   height: 100%;
   margin: auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .logosection {
+  border-radius: 10px 0 0 10px;
   width: 40%;
   height: 100%;
   background-image: url("img/background.jpg");
@@ -40,11 +43,14 @@ body {
 }
 
 .formsection {
+  border-radius: 10px;
+
   float: right;
   width: 60%;
   height: 100%;
   display: flex;
   align-items: center;
+  background-color: white;
 }
 
 .formsection > div > * {
@@ -55,7 +61,7 @@ body {
   margin: 50px 0 30px 0;
   background-color: white;
   border: solid 1px white;
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .formsection p:first-of-type,
